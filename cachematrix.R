@@ -12,7 +12,7 @@ makeCacheMatrix <- function(x = matrix()) {
             i <<- NULL
     }
 
-    ## Method the get the matrix
+    ## Method getting the matrix
     get <- function() {
     	## Return the matrix
     	m
@@ -40,6 +40,7 @@ cacheSolve <- function(x, ...) {
 
     ## returning the inverse
     if( !is.null(m) ) {
+      
             message("getting cached data")
             return(m)
     }
